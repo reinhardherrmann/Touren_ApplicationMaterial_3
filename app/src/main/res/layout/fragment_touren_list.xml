@@ -7,36 +7,35 @@
     tools:context=".ui.feature_touren.TourenListFragment">
 
 
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <com.google.android.material.appbar.MaterialToolbar
             android:id="@+id/touren_list_toolbar"
-            android:maxWidth="0dp"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            app:layout_constraintTop_toTopOf="parent"
+            android:background="@color/design_default_color_primary"
+            android:maxWidth="0dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:title="Touren Übersicht"
-            app:titleTextColor="@color/white"
+            app:layout_constraintTop_toTopOf="parent"
+            app:menu="@menu/menu_touren"
             app:subtitle="Alle Touren"
             app:subtitleTextColor="@color/white"
-            app:menu="@menu/menu_touren"
-            android:background="@color/design_default_color_primary"/>
+            app:title="Touren Übersicht"
+            app:titleTextColor="@color/white" />
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/list_body"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:padding="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/touren_list_toolbar"
-            android:padding="8dp">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/touren_list_toolbar">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/rv_touren"
@@ -56,11 +55,11 @@
             android:id="@+id/empty_body"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:padding="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/touren_list_toolbar"
-            android:padding="8dp">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/touren_list_toolbar">
 
             <include layout="@layout/empty_touren_list" />
 
@@ -70,14 +69,24 @@
             android:id="@+id/fab_add_new_tour"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/design_default_color_primary"
-            android:src="@drawable/baseline_add_road_24"
-            app:tint="@color/white"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/design_default_color_primary"
+            android:src="@drawable/baseline_add_road_24"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:tint="@color/white" />
 
+        <ProgressBar
+            android:id="@+id/loading_touren"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.5" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
