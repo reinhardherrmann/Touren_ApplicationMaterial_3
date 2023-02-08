@@ -3,10 +3,12 @@
 -------------------------------------------------------------------------------
 Step 07
 -------------------------------------------------------------------------------
-Step 06
+Step 06     Database Setup
+            Tourdao and App database created
+            app tested
 -------------------------------------------------------------------------------
 Step 05     Implement Hilt
-            MyApp created and notet in manifest, Entity Tour implemented
+            MyApp created and added to manifest, Entity Tour implemented
 -------------------------------------------------------------------------------
 Step 04     Add Dependencies Dagger Hit 
             Coroutines recyclerview decorations
