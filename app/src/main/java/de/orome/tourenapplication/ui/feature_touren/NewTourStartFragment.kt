@@ -8,14 +8,14 @@ import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
 import androidx.navigation.fragment.findNavController
 import com.google.android.material.snackbar.Snackbar
-import de.orome.tourenapplication.databinding.FragmentTourNewStartBinding
+import de.orome.tourenapplication.databinding.DialogFragmentTourNewStartBinding
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
 class NewTourStartFragment : DialogFragment() {
 
-    private var _binding: FragmentTourNewStartBinding? = null
+    private var _binding: DialogFragmentTourNewStartBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -26,7 +26,7 @@ class NewTourStartFragment : DialogFragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentTourNewStartBinding.inflate(inflater, container, false)
+        _binding = DialogFragmentTourNewStartBinding.inflate(inflater, container, false)
         return binding.root
 
     }

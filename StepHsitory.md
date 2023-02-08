@@ -17,7 +17,7 @@ Step 11
 -------------------------------------------------------------------------------
 Step 10
 -------------------------------------------------------------------------------
-Step 09
+Step 09     Edit onBoarding for New Tour
 -------------------------------------------------------------------------------
 Step 08     Create Layout touren_list_fragment with toolbar
             FloatingactionButton added and layout resource for empty
