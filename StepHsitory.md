@@ -19,7 +19,11 @@ Step 10
 -------------------------------------------------------------------------------
 Step 09
 -------------------------------------------------------------------------------
-Step 08     
+Step 08     Create Layout touren_list_fragment with toolbar
+            FloatingactionButton added and layout resource for empty
+            touren list added as well
+            Menu for appbar ceated
+            added several icons
 -------------------------------------------------------------------------------
 Step 07     Create Layout for item_touren_list
 -------------------------------------------------------------------------------
