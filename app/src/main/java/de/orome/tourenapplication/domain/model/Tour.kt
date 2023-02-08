@@ -13,13 +13,13 @@ data class Tour (
 
     @PrimaryKey
     @ColumnInfo(name = "tr_tour_nummer")
-    val tourNummer: Int,
+    val tourNummer: Int =0,
 
     @ColumnInfo(name = "tr_tour_datum")
     val tourDatum: Long = System.currentTimeMillis(),
 
     @ColumnInfo(name = "tr_driver_number")
-    val tourDriverNumber: String,
+    val tourDriverNumber: String ="0056",
 
     @ColumnInfo(name = "tr_dauer")
     val tourDauer: Long= 0L,
@@ -61,16 +61,16 @@ data class Tour (
     val tourBemerkung: String = "",
 
     @ColumnInfo(name = "tr_depotzeit_vt")
-    val tourDepotZeitVT: Long,
+    val tourDepotZeitVT: Long = 0L,
 
     @ColumnInfo(name = "tr_depotzeit_nt")
-    val tourDepotZeitNT: Long,
+    val tourDepotZeitNT: Long =0L,
 
     @ColumnInfo(name = "tr_fahrzeit")
-    val tourFahrtZeit: Long,
+    val tourFahrtZeit: Long = 0L,
 
     @ColumnInfo(name = "tr_standzeit")
-    val tourStandZeit: Long,
+    val tourStandZeit: Long = 0L,
 
     @ColumnInfo(name = "tr_fahrzeug_nummer")
     val tourFahrzeugNummer: Int = 0
