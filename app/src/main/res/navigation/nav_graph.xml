@@ -3,26 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/FirstFragment">
+    app:startDestination="@id/TourenListFragment">
 
     <fragment
-        android:id="@+id/FirstFragment"
-        android:name="de.orome.tourenapplication.FirstFragment"
+        android:id="@+id/TourenListFragment"
+        android:name="de.orome.tourenapplication.TourenListFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first">
+        tools:layout="@layout/fragment_touren_list">
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
-            app:destination="@id/SecondFragment" />
+            app:destination="@id/TourenOverviewFragment" />
     </fragment>
     <fragment
-        android:id="@+id/SecondFragment"
-        android:name="de.orome.tourenapplication.SecondFragment"
+        android:id="@+id/TourenOverviewFragment"
+        android:name="de.orome.tourenapplication.TourOverViewFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second">
+        tools:layout="@layout/fragment_tour_overview">
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
-            app:destination="@id/FirstFragment" />
+            app:destination="@id/TourenListFragment" />
     </fragment>
 </navigation>

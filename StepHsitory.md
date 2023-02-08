@@ -7,9 +7,11 @@ Step 06
 -------------------------------------------------------------------------------
 Step 05
 -------------------------------------------------------------------------------
-Step 04
+Step 04     Add Dependencies Dagger Hit
 -------------------------------------------------------------------------------
-Step 03
+Step 03     Design Fragments for Touren
+            List Fragment, Add new Tour as Diaogfragment
+            TODO create more diaogfragment to design onboarding process
 -------------------------------------------------------------------------------
 Step 02     Add dependencies
             Room, Navigation, Safeargs, ViewModel Livedata

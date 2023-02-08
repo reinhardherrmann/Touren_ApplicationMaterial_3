@@ -5,15 +5,17 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.DialogFragment
 import androidx.navigation.fragment.findNavController
-import de.orome.tourenapplication.databinding.FragmentSecondBinding
+import de.orome.tourenapplication.databinding.FragmentTourOverviewBinding
+
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
  */
-class SecondFragment : Fragment() {
+class TourOverViewFragment : Fragment() {
 
-    private var _binding: FragmentSecondBinding? = null
+    private var _binding: FragmentTourOverviewBinding? = null
 
     // This property is only valid between onCreateView and
     // onDestroyView.
@@ -24,7 +26,7 @@ class SecondFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
 
-        _binding = FragmentSecondBinding.inflate(inflater, container, false)
+        _binding = FragmentTourOverviewBinding.inflate(inflater, container, false)
         return binding.root
 
     }
@@ -34,6 +36,12 @@ class SecondFragment : Fragment() {
 
         binding.buttonSecond.setOnClickListener {
             findNavController().navigate(R.id.action_SecondFragment_to_FirstFragment)
+        }
+
+        binding.buttonStartTour.setOnClickListener {
+            val dFragment = NewTourStartFragment()
+            dFragment.show(childFragmentManager,"Test")
+            //findNavController().navigate(R.id.action_TourenOverviewFragment_to_newTourStartFragment)
         }
     }
 
