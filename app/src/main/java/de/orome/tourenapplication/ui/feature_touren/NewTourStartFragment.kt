@@ -1,4 +1,4 @@
-package de.orome.tourenapplication
+package de.orome.tourenapplication.ui.feature_touren
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

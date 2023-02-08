@@ -1,4 +1,4 @@
-package de.orome.tourenapplication
+package de.orome.tourenapplication.ui.feature_touren
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
+import de.orome.tourenapplication.R
 import de.orome.tourenapplication.databinding.FragmentTourenListBinding
 
 /**

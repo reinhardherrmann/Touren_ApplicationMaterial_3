@@ -7,7 +7,9 @@ Step 06
 -------------------------------------------------------------------------------
 Step 05
 -------------------------------------------------------------------------------
-Step 04     Add Dependencies Dagger Hit
+Step 04     Add Dependencies Dagger Hit 
+            Coroutines recyclerview decorations
+            app tested            
 -------------------------------------------------------------------------------
 Step 03     Design Fragments for Touren
             List Fragment, Add new Tour as Diaogfragment

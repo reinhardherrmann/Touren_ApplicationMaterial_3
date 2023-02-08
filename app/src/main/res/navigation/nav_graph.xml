@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/TourenListFragment"
-        android:name="de.orome.tourenapplication.TourenListFragment"
+        android:name="de.orome.tourenapplication.ui.feature_touren.TourenListFragment"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/fragment_touren_list">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/TourenOverviewFragment"
-        android:name="de.orome.tourenapplication.TourOverViewFragment"
+        android:name="de.orome.tourenapplication.ui.feature_touren.TourOverViewFragment"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/fragment_tour_overview">
 
