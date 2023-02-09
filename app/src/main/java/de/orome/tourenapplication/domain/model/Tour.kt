@@ -11,7 +11,8 @@ import kotlinx.android.parcel.Parcelize
 @Parcelize
 data class Tour(
 
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
+    val id: Int=0,
     @ColumnInfo(name = "tr_tour_nummer")
     val tourNummer: Int = 0,
 
