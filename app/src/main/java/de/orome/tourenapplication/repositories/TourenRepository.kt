@@ -9,5 +9,5 @@ class TourenRepository @Inject constructor(
 ) {
 
     suspend fun insertNewTour(tour: Tour) = tourenDao.insertTour(tour)
-
+    fun getAllTouren() = tourenDao.getAllTouren()
 }

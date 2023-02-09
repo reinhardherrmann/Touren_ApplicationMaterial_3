@@ -9,20 +9,20 @@ import kotlinx.android.parcel.Parcelize
 
 @Entity(tableName = TOUREN_TABLE)
 @Parcelize
-data class Tour (
+data class Tour(
 
     @PrimaryKey
     @ColumnInfo(name = "tr_tour_nummer")
-    val tourNummer: Int =0,
+    val tourNummer: Int = 0,
 
     @ColumnInfo(name = "tr_tour_datum")
     val tourDatum: Long = System.currentTimeMillis(),
 
     @ColumnInfo(name = "tr_driver_number")
-    val tourDriverNumber: String ="0056",
+    val tourDriverNumber: String = "0056",
 
     @ColumnInfo(name = "tr_dauer")
-    val tourDauer: Long= 0L,
+    val tourDauer: Long = 0L,
 
     @ColumnInfo(name = "tr_start_zeit")
     val tourStartZeit: Long = 0L,
@@ -64,7 +64,7 @@ data class Tour (
     val tourDepotZeitVT: Long = 0L,
 
     @ColumnInfo(name = "tr_depotzeit_nt")
-    val tourDepotZeitNT: Long =0L,
+    val tourDepotZeitNT: Long = 0L,
 
     @ColumnInfo(name = "tr_fahrzeit")
     val tourFahrtZeit: Long = 0L,
@@ -75,4 +75,4 @@ data class Tour (
     @ColumnInfo(name = "tr_fahrzeug_nummer")
     val tourFahrzeugNummer: Int = 0
 
-): Parcelable
+) : Parcelable
